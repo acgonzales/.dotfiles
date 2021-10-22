@@ -41,7 +41,6 @@ disabled = false
 [character]
 success_symbol = "[─➜](bold blue)"
 error_symbol = "[─](bold blue)[×](bold red)"
-use_symbol_for_status = true
 
 # SYMBOLS
 
