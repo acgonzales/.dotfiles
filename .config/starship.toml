@@ -1,7 +1,7 @@
 add_newline = true
 
 [username]
-format = "[── $user]($style)@"
+format = "[── $user]($style): "
 style_user = "bold blue"
 style_root = "bold red"
 show_always = true
@@ -11,14 +11,15 @@ show_always = true
 format = "[$hostname]($style) in "
 style = "bold dimmed blue"
 trim_at = "-"
-ssh_only = false
-disabled = false
+ssh_only = true
+disabled = true
 
-# Third param …
+# Third param 
 [directory]
 truncation_length = 0
 truncate_to_repo = true
-truncation_symbol = "repo:"
+truncation_symbol = "GIT:"
+read_only = " "
 
 # Before all the version info (python, nodejs, php, etc.)
 [git_status]
@@ -35,18 +36,17 @@ format = "took [$duration]($style)"
 disabled = false
 
 # SECOND LINE/ROW: Prompt
-#
 
 # Prompt: param 2 └─
 [character]
-success_symbol = "\n[─➜](bold blue)"
-error_symbol = "\n[─](bold blue)[×](bold red)"
+success_symbol = "[─➜](bold blue)"
+error_symbol = "[─](bold blue)[×](bold red)"
 use_symbol_for_status = true
 
 # SYMBOLS
 
 [aws]
-symbol = " "
+symbol = "  "
 
 [conda]
 symbol = " "
@@ -54,7 +54,7 @@ symbol = " "
 [dart]
 symbol = " "
 
-[docker]
+[docker_context]
 symbol = " "
 
 [elixir]
@@ -68,9 +68,6 @@ symbol = " "
 
 [golang]
 symbol = " "
-
-[haskell]
-symbol = " "
 
 [hg_branch]
 symbol = " "
@@ -90,9 +87,6 @@ symbol = " "
 [nix_shell]
 symbol = " "
 
-[nodejs]
-symbol = " "
-
 [package]
 symbol = " "
 
@@ -110,6 +104,12 @@ symbol = " "
 
 [rust]
 symbol = " "
+
+[scala]
+symbol = " "
+
+[shlvl]
+symbol = " "
 
 [swift]
 symbol = "ﯣ "
