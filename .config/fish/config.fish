@@ -7,4 +7,11 @@ if type -q exa
     alias lla "ll -a"
 end
 
+# Docker stuffs
+if type -q docker-compose
+    alias dcu "docker-compose up -d"
+    alias dcd "docker-compose down"
+end
+
+
 starship init fish | source
