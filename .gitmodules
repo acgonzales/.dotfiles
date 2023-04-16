@@ -1,3 +1,4 @@
-[submodule ".config/ulauncher/user-themes/one-dark-ulauncher"]
-	path = .config/ulauncher/user-themes/one-dark-ulauncher
-	url = https://github.com/sudosubin/one-dark-ulauncher.git
+[submodule "dotbot"]
+	path = dotbot
+	url = https://github.com/anishathalye/dotbot
+	ignore = dirty
