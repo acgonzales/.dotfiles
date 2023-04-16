@@ -17,7 +17,7 @@
   ~/.config/starship.toml:
     create: true
     force: true
-    path: starship.toml
+    path: ~/.dotfiles/.config/starship.toml
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
     - [chmod +x ./scripts/*.zsh, Making scripts executable]
