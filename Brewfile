@@ -39,8 +39,10 @@ cask "font-fira-code"
 cask "font-jetbrains-mono"
 cask "font-jetbrains-mono-nerd-font"
 cask "font-inter"
+# Convert your caps lock key or any of your modifier keys to the hyper key
+cask "hyperkey"
 # Terminal emulator as alternative to Apple's Terminal app
-cask iterm2
+cask "iterm2"
 # Customize mouse behavior
 cask "linearmouse"
 # Control your tools with a few keystrokes

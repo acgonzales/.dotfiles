@@ -2,22 +2,31 @@
     link:
       relink: true
 - clean:
-    - ~
-    - ~/.config:
-        recursive: true
+    ~/:
+      force: false
+    ~/.config:
+      recursive: true
 - create:
     - ~/Development
 - link:
-  ~/.gitconfig:
-    force: true
-    path: gitconfig
-  ~/.zshrc:
-    force: true
-    path: zshrc
-  ~/.config/starship.toml:
-    create: true
-    force: true
-    path: ~/.dotfiles/.config/starship.toml
+    ~/.gitconfig:
+      force: true
+      path: gitconfig
+    ~/.zshrc:
+      force: true
+      path: zshrc
+    ~/.config/starship.toml:
+      create: true
+      force: true
+      path: ~/.dotfiles/.config/starship.toml
+    ~/.config/yabai:
+      create: true
+      force: true
+      path: ~/.dotfiles/.config/yabai
+    ~/.config/skhd:
+      create: true
+      force: true
+      path: ~/.dotfiles/.config/skhd
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
     - [chmod +x ./scripts/*.zsh, Making scripts executable]
