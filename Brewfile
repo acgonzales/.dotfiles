@@ -39,10 +39,14 @@ cask "font-fira-code"
 cask "font-jetbrains-mono"
 cask "font-jetbrains-mono-nerd-font"
 cask "font-inter"
+# Terminal emulator as alternative to Apple's Terminal app
+cask iterm2
 # Customize mouse behavior
 cask "linearmouse"
 # Control your tools with a few keystrokes
 cask "raycast"
+# Music streaming service
+cask "spotify"
 # Open-source code editor
 cask "visual-studio-code"
 

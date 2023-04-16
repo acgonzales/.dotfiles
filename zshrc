@@ -138,4 +138,4 @@ eval "$(starship init zsh)"
 ## Completion scripts setup. Remove the following line to uninstall
 [[ -f /Users/acgonzales/.dart-cli-completion/zsh-config.zsh ]] && . /Users/acgonzales/.dart-cli-completion/zsh-config.zsh || true
 ## [/Completion]
-
+ 
