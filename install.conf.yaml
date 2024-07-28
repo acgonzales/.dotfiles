@@ -8,32 +8,28 @@
       recursive: true
 - create:
     - ~/Development
-- link:
-    ~/.gitconfig:
-      force: true
-      path: gitconfig
-    ~/.zshrc:
-      force: true
-      path: zshrc
-    ~/.config/starship.toml:
-      create: true
-      force: true
-      path: ~/.dotfiles/.config/starship.toml
-    ~/.config/yabai:
-      create: true
-      force: true
-      path: ~/.dotfiles/.config/yabai
-    ~/.config/skhd:
-      create: true
-      force: true
-      path: ~/.dotfiles/.config/skhd
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
-    - [chmod +x ./scripts/*.zsh, Making scripts executable]
-    - command: ./scripts/setup_omz.zsh
-      description: Installing oh-my-zsh
-    - command: ./scripts/setup_homebrew.zsh
+    - [chmod +x ./scripts/*.sh, Making scripts executable]
+    - command: ./scripts/setup_homebrew.sh
       description: Installing Homebrew and packages
       stdin: true
       stdout: true
       stderr: true
+- link:
+    ~/.gitconfig:
+      force: true
+      path: .gitconfig
+    ~/.zshrc:
+      force: true
+      path: .zshrc
+    ~/.zprofile:
+      force: true
+      path: .zprofile
+    ~/.p10k.zsh:
+      force: true
+      path: .p10k.zsh
+    ~/.config/alacritty:
+      create: true
+      force: true
+      path: .config/alacritty
